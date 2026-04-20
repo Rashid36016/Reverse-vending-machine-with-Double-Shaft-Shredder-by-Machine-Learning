@@ -1,0 +1,86 @@
+Windows 11 এ YOLO setup + check 👇
+
+
+
+STEP 1: Python install (Windows 11)
+Download: 👉 https://www.python.org/downloads/windows/
+Install করার সময় IMPORTANT: ✔ “Add Python to PATH” ✔️ (এইটা অবশ্যই tick দাও)
+
+
+STEP 2: Test Python install
+CMD (Command Prompt) খুলে লিখো:
+python --version
+Output আসবে → দেখতে পাবে Python version
+
+
+STEP 3: YOLO + Libraries install
+CMD এ এইটা paste করো: pip install ultralytics opencv-python requests
+Problem হলে fix
+❌ pip not recognized
+python -m pip install ultralytics 
+
+
+STEP 4: Test YOLO install
+CMD এ লিখো: yolo
+Output আসলে → install OK
+
+
+STEP 4: Simple YOLO test (image)
+Open Notepad → Paste 
+////
+Codes is in next folder Folder Name: Python codes File Name: test
+///
+ক্লিক Save → Name: test.py → Save as type: All files → Path: C - User - Lenovo - yolo_project
+
+
+Step 5: Run করো
+CMD (Command Prompt) খুলে লিখো:
+python test.py
+Result window open হবে
+Object দেখতে পাবে
+
+
+STEP 6: Camera test (PC webcam)
+Open Notepad → Paste below codes
+///
+Codes is in next folder Folder Name: Python codes File Name: stream_test
+///
+ক্লিক Save → Name: stream_test.py → Save as type: All files → Path: C - User - Lenovo - yolo_project
+
+
+STEP 7: ESP32 Cam stream test
+CMD (Command Prompt) খুলে লিখো:
+stream_test.py
+Result window open হবে
+Object detect দেখতে পাবে
+
+
+STEP 8: Filter Bottle test (PC webcam)
+Open Notepad → Paste below codes
+///
+Codes is in next folder Folder Name: Python codes File Name: filtered_yolo
+///
+ক্লিক Save → Name: filtered_yolo.py → Save as type: All files → Path: C - User - Lenovo - yolo_project
+
+
+STEP 9: ESP32 Cam stream test
+CMD (Command Prompt) খুলে লিখো:
+filtered_yolo.py
+Result window open হবে
+Only bottle detect করবে।
+
+
+STEP 10: Main code (It will use from now)
+Open Notepad → Paste below codes
+///
+Codes is in next folder Folder Name: Python codes File Name: main_control
+///
+ক্লিক Save → Name: main_control.py → Save as type: All files → Path: C - User - Lenovo - yolo_project
+
+
+STEP 11: ESP32 Activities
+Connect ESP32 with PC and connect LEDs with ESP32
+CMD (Command Prompt) খুলে লিখো:
+main_control.py
+Result window open হবে
+ESP32 এর activities দেখতে পাবে।

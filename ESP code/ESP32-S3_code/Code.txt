@@ -1,0 +1,40 @@
+Step-1
+Arduino → Preferences → Additional URLs:https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_index.json
+
+
+Step-2
+Tools → Board → Boards Manager : 
+👉 Search: ESP32 → Install 
+
+
+step-3
+Sketch → Include Library → Manage Libraries :
+👉 Search: ESPAsyncWebServer → Install 
+👉 Search: AsyncTCP → Install 
+
+
+Step-4
+File → Examples → ESP32 → Camera → CameraWebServer
+
+
+Step-5
+CameraWebServer example code এর top এ এই অংশ থাকবে:
+এখানে নিজের WiFi বসাও:
+const char* ssid = "YOUR_WIFI_NAME";
+const char* password = "YOUR_WIFI_PASSWORD";
+
+Step-6
+CameraWebServer code এর top এ এই অংশ থাকবে:
+//#define CAMERA_MODEL_AI_THINKER
+//#define CAMERA_MODEL_WROVER_KIT
+//#define CAMERA_MODEL_ESP_EYE
+#define CAMERA_MODEL_ESP32S3_EYE
+
+Step-7
+Upload এর পর check করো 
+Serial Monitor এ দেখাবে:Camera Ready! Use 'http://192.168.1.xxx'
+👉 Browser এ ঢুকো 
+👉 http://192.168.1.xxx পেস্ট করো 
+👉 "Start Stream" চাপো
+
+👉👉👉👉👉👉👉👉👉 Steam দেখতে পাবে 👈👈👈👈👈👈👈👈👈
