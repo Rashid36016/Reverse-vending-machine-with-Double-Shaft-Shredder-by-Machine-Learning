@@ -1,0 +1,27 @@
+RVM System Connection:
+
+Servo-1: Signal -> GPIO 4 , VCC -> Buck 5V , GND -> Buck GND
+Servo-2: Signal -> GPIO 5 , VCC -> Buck 5V , GND -> Buck GND
+
+Green LED   VCC -> GPIO 12 , GND -> SMPS GND
+Red LED     VCC -> GPIO 13 , GND -> SMPS GND
+Red LED     VCC -> GPIO 18 , GND -> SMPS GND
+Orange LED  VCC -> GPIO 21 , GND -> SMPS GND
+Blue LED    VCC -> GPIO 22 , GND -> SMPS GND
+White LED   VCC -> GPIO 23 , GND -> SMPS GND
+
+Thermal Printer: RX -> RX , TX -> TX , VCC -> SMPS 12v , GND -> SMPS GND
+
+ESP32: VCC -> Buck 5V , GND -> Buck GND
+
+ESSP32 S3 CAM: USB Port to LAPTOP
+
+
+
+Meaning of LED:-
+Ready        -> Green LED
+STOP         -> Red LED
+PROCESSING   -> Yellow LED
+SERVO OPEN   -> Orange LED
+SERVO CLOSE  -> Blue LED
+PRINT        -> White LED
