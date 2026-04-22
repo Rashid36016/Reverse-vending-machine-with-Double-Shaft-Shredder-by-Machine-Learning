@@ -1,4 +1,4 @@
-# Reverse Vending Machine (RVM) with Double Shaft Auto/Timed Shredder
+# Reverse-vending-machine-with-Double-Shaft-Shredder-by-Machine-Learning
 
 ## Project Overview
 
