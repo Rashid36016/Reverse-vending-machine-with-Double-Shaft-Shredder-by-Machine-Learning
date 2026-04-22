@@ -118,12 +118,6 @@ The motor operates for a predefined duration to prevent overload and ensure safe
 
 ---
 
-## Notes
-
-Large files such as trained YOLO models and complete STL datasets are not included in this repository. These can be accessed via an external storage link.
-
----
-
 ## Author
 
 Rashid
