@@ -1,60 +1,82 @@
-# Reverse Vending Machine (RVM) with Double Shaft Auto/Timed Shredder
+# Reverse-vending-machine-with-Double-Shaft-Shredder-by-Machine-Learning
 
 ## Project Overview
 
-This project presents a Reverse Vending Machine (RVM) designed to collect and process plastic bottles. The system integrates artificial intelligence, embedded systems, and mechanical design to automate validation and shredding.
+This project presents a smart Reverse Vending Machine (RVM) designed to accept recyclable plastic bottles, verify them using artificial intelligence and sensor-based validation, and process them using a double shaft shredding mechanism.
 
-The machine detects bottles using a YOLO-based model, verifies them using sensors, and processes them through a double shaft shredding mechanism.
+The system integrates AI, embedded systems, and mechanical design to create an efficient and automated recycling solution.
 
 ---
 
 ## Objectives
 
-* Automate plastic bottle collection
-* Validate objects using AI and sensors
-* Reduce waste volume through shredding
-* Develop an integrated mechatronic system
+* To automate plastic bottle collection and validation
+* To reduce waste volume through shredding
+* To prevent invalid inputs using AI and sensors
+* To develop an integrated mechatronic recycling system
+
+---
+
+## Key Features
+
+* AI-based object detection using YOLO
+* Real-time image capture using ESP32-S3 CAM
+* Sensor-based validation (IR / proximity)
+* Double shaft shredding system
+* Automatic and timed motor control
+* Feedback system (LED / thermal printer)
 
 ---
 
 ## System Architecture
 
-### Detection Layer
+### 1. Detection Layer (Artificial Intelligence)
 
-The ESP32-S3 CAM captures images and the YOLO model detects whether the object is a valid bottle.
+The system captures images using the ESP32-S3 CAM and processes them through a YOLO-based object detection model to identify whether the inserted object is a valid plastic bottle.
 
-### Validation Layer
+### 2. Validation Layer (Sensors)
 
-Sensors such as IR or proximity sensors confirm the presence and correctness of the object.
+Sensors are used to confirm the presence and correctness of the object, reducing false positives and ensuring reliability.
 
-### Processing Layer
+### 3. Processing Layer (Mechanical System)
 
-A double shaft shredder crushes the bottle to reduce volume and prepare it for recycling.
+A double shaft shredder is used to crush the bottle. This reduces volume and prepares the material for recycling.
 
 ---
 
 ## Working Principle
 
-1. User inserts a bottle
-2. Image is captured
-3. YOLO model detects the object
+1. The user inserts a plastic bottle
+2. The camera captures an image
+3. The YOLO model performs object detection
 4. Sensors validate the input
-5. If valid, the shredder activates
-6. Bottle is crushed
-7. System provides output feedback
+5. If the object is valid:
+
+   * The shredder motor is activated
+6. The bottle is shredded
+7. The system provides output feedback
 
 ---
 
-## Shredder System
+## Shredder Mechanism
 
-The machine uses a double shaft shredding mechanism where two shafts rotate in opposite directions. Blades attached to the shafts grip and cut the bottle, improving efficiency and reducing jamming.
+The system utilizes a double shaft shredding mechanism:
+
+* Two shafts rotate in opposite directions
+* Blades mounted on the shafts grip and cut the material
+* This configuration improves efficiency and reduces the risk of jamming
 
 ---
 
 ## Control System
 
-* Automatic mode: activates when a valid object is detected
-* Timed mode: runs for a fixed duration to prevent overload
+### Automatic Mode
+
+The shredder is activated automatically upon successful detection and validation.
+
+### Timed Mode
+
+The motor operates for a predefined duration to prevent overload and ensure safe operation.
 
 ---
 
@@ -64,16 +86,16 @@ The machine uses a double shaft shredding mechanism where two shafts rotate in o
 * ESP32-S3 CAM
 * Motor driver
 * DC motors
-* Sensors (IR / proximity)
+* IR / proximity sensors
 * Thermal printer
-* Power supply
+* Power supply (SMPS)
 
 ---
 
-## Software
+## Software Components
 
-* Arduino IDE
-* Python (YOLO)
+* Arduino IDE (ESP32 programming)
+* Python (YOLO model implementation)
 * Embedded C/C++
 
 ---
@@ -82,5 +104,32 @@ The machine uses a double shaft shredding mechanism where two shafts rotate in o
 
 * Smart recycling systems
 * Educational institutions
-* Public places
-* Smart city projects
+* Commercial areas (shopping malls)
+* Smart city infrastructure
+
+---
+
+## Advantages
+
+* Encourages recycling behavior
+* Reduces waste volume
+* Minimizes human intervention
+* Integrates AI with mechanical processing
+
+---
+
+## Future Work
+
+* Integration of a reward-based system
+* Mobile application support
+* Cloud-based monitoring
+* Improved detection accuracy
+
+---
+
+## Author
+
+Rashid
+Industrial and Production Engineering Student
+
+---
