@@ -11,6 +11,17 @@ Components
 9. Thermal Printer
 10. LEDs (Red, Blue, Green, White, Yellow, Orange)
 11. Laptop / Computer
+13. Steel Sheet for Frame
+14. Shredder Teeth With Shaft (twin shaft)
+15. Main Switch
+16. Plug × 2
+17. AC Motor (2Hp)
+18. Gearbox
+19. Contantor
+20. Overload Relay
+21. Time Relay
+22. Emergency Stop Button
+23. VFD
 
 
 Tools and Equipment
